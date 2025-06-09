@@ -266,19 +266,19 @@
             {
                 title: "最低限準備しておきたい便利な個人事業開始ガイド",
                 url: "https://syounosukeblog.com/personal-business-preparation-guide/", // TODO: 正しいURLに更新
-                img: "/assets/works1.webp", // TODO: 正しい画像パスに更新
+                img: "https://placehold.co/600x400/A5D7E8/333333?text=個人事業開始ガイド",
                 desc: "開業時に本当に役立つチェックリスト。これさえあれば安心！"
             },
             {
                 title: "個人事業主と法人どっちが自由？働き方6項目比較",
                 url: "https://syounosukeblog.com/freelance-vs-corporate-freedom/", // TODO: 正しいURLに更新
-                img: "/assets/works2.webp", // TODO: 正しい画像パスに更新
+                img: "https://placehold.co/600x400/A5D7E8/333333?text=個人事業主vs法人",
                 desc: "独立形態を迷う人向け徹底比較。メリット・デメリットを解説。"
             },
             {
                 title: "個人事業主の孤独な悩みと具体的な解消法5選",
                 url: "https://syounosukeblog.com/freelance-loneliness-solutions/", // TODO: 正しいURLに更新
-                img: "/assets/works3.webp", // TODO: 正しい画像パスに更新
+                img: "https://placehold.co/600x400/A5D7E8/333333?text=悩み解消法",
                 desc: "一人で悩まないための実践術。仲間を見つけるヒントも。"
             }
         ];
@@ -288,12 +288,12 @@
         works.forEach(work => {
             const card = `
                 <div class="bg-white rounded-2xl shadow-lg-custom overflow-hidden flex flex-col transform transition-all duration-300 hover:scale-105">
-                    <img src="${work.img}" alt="${work.title} サムネイル" class="w-full h-48 object-cover aspect-video">
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold mb-2 text-gray-800">${work.title}</h3>
-                        <p class="text-gray-600 mb-4 text-sm flex-grow">${work.desc}</p>
+                    <img src="${work.img}" alt="${work.title} サムネイル" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">${work.title}</h3>
+                        <p class="text-gray-600 mb-4">${work.desc}</p>
                         <a href="${work.url}" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-primary text-white text-center font-semibold py-2 px-4 rounded-lg hover:bg-opacity-80 transition-colors text-sm">
-                            Read
+                            記事を読む
                         </a>
                     </div>
                 </div>
